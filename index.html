@@ -87,3 +87,31 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Page</title>
+<script>
+    // Define your username and password here
+    const USERNAME = "admin";
+    const PASSWORD = "password123";
+
+    // Prompt the user for username and password
+    const user = prompt("Enter Username:");
+    const pass = prompt("Enter Password:");
+
+    // Check if the credentials match
+    if (user !== USERNAME || pass !== PASSWORD) {
+        alert("Unauthorized Access!");
+        window.location.href = "https://example.com";  // Redirect to another page if credentials are wrong
+    }
+</script>
+</head>
+<body>
+<h1>Welcome to the Secure Page!</h1>
+<p>If you see this, you’ve entered the correct username and password!</p>
+</body>
+</html>
+
